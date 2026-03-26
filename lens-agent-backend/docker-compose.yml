@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Placeholder for backend service when using Docker
+  # In development, run: make dev
+  # In production, configure with production values
+  
+  # Redis is managed by Upstash (no local instance needed)
+  # PostgreSQL is managed by Supabase (no local instance needed)
+  
+  # Example for local development with containers:
+  # Uncomment to use local Redis and Postgres
+  
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  
+  # postgres:
+  #   image: postgres:15-alpine
+  #   environment:
+  #     POSTGRES_PASSWORD: password
+  #     POSTGRES_DB: lens
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+
+# volumes:
+#   redis_data:
+#   postgres_data:
